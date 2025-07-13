@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <title>Contact Us</title>
+</head>
+<body id="page">
+
+  <div class="wrapper">
+    <div class="logo">
+      <h1>Radhe-Radhe Aluminium Fabrications</h1>
+    </div>
+
+    <div class="contact1">
+      <h2>Reach us on:</h2>
+      <p>Email: laxmidarsh786@gmail.com</p>
+      <p>Phone number: 9696864802</p>
+      <p>Phone number: 9696864802</p>
+      <p>Address: ED-1/207, LDA Colony, Kanpur Road, Lucknow, Uttar Pradesh</p>
+    </div>
+
+    <div class="contact-form">
+      <h2>Feedback Form</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="feed" placeholder="Write feedback"></textarea>
+        <button type="submit" id="btn">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="contact.js">
+    if (localStorage.getItem('theme') === 'dark') {
+      document.getElementById('page').classList.add('dark-theme');
+    }
+  </script>
+</body>
+</html>

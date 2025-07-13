@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our menu</title>
+  <link rel="stylesheet" href="order-style.css" />
+</head>
+<body id="page">
+  <header class="navbar">
+    <h1>Radhe Radhe Aluminium Fabrications</h1>
+  </header>
+
+  <main>
+    <section class="products">
+      <h2>Products</h2>
+      <div class="product">
+        <h3>Aluminium Window</h3>
+        <p>₹100</p>
+      </div>
+      <div class="product">
+        <h3>Aluminium Frame</h3>
+        <p>₹150</p>
+      </div>
+      <div class="product">
+        <h3>Aluminium Grill</h3>
+        <p>₹200</p>
+      </div>
+      <div class="product">
+        <h3>Aluminium Frame</h3>
+        <p>₹150</p>
+      </div>
+    </section>
+
+    <section class="order-form">
+      <h2>Give review</h2>
+      <form id="orderForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="tel" id="contact" placeholder="Contact Number" required />
+        <input type="text" id="address" placeholder="Address" required />
+        <textarea id="rev" placeholder="Drop your review"></textarea>
+        <button type="submit">Submit Review</button>
+      </form>
+
+      <div id="orderSummary" class="hidden">
+        <h3>Order Summary</h3>
+        <p id="summaryText"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    &copy; 2025 Radhe Radhe Aluminium Fabrications
+  </footer>
+
+  <!-- Enable dark mode if stored in localStorage -->
+  <script>
+    if (localStorage.getItem('theme') === 'dark') {
+      document.getElementById('page').classList.add('dark-theme');
+    }
+  </script>
+
+  <!-- Review submission script -->
+  <script src="order-script.js"></script>
+</body>
+</html>

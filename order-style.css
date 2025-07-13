@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  padding: 1rem;
+  color: #333;
+}
+
+.navbar {
+  background: #2c3e50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+.products, .order-form {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.products h2 {
+  text-align: center;
+}
+
+.product {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input, select, button, #rev {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #219150;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  text-align: center;
+  padding: 0rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 🌙 Dark Theme Support */
+.dark-theme {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+.dark-theme .navbar {
+  background: #1f1f1f;
+  color: #f1f1f1;
+}
+
+.dark-theme .products,
+.dark-theme .order-form {
+  background: #1e1e1e;
+  color: #f1f1f1;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme input,
+.dark-theme select,
+.dark-theme button,
+.dark-theme #rev {
+  background: #2b2b2b;
+  color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+.dark-theme button {
+  background: #388e3c;
+}
+
+.dark-theme button:hover {
+  background: #2e7d32;
+}
+
+.dark-theme .footer {
+  color: #aaa;
+}
+
+#rev {
+  height: 45px;
+  font-family: sans-serif;
+}

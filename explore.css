@@ -80,7 +80,7 @@ body {
 /* Sections */
 .about, .owner {
   padding: 2rem 1.5rem;
-  margin: 2.5rem auto;
+  margin: 2.5rem 3rem 0 3rem;
   max-width: 800px;
   background: #fff;
   border-radius: 16px;
